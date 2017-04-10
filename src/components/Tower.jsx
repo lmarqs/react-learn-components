@@ -1,19 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Apartment from './Apartment';
 
-const Tower = ({ isNight }) => (
+const Tower = () => (
   <div className="tower">
     <div className="watter-supply"></div>
-    <Apartment isNight={isNight} />
-    <Apartment isNight={isNight} />
-    <Apartment isNight={isNight} />
-    <Apartment isNight={isNight} />
-    <Apartment isNight={isNight} />
+    <Apartment />
+    <Apartment />
+    <Apartment />
+    <Apartment />
+    <Apartment />
   </div>
 )
-Tower.propTypes = {
-  isNight: PropTypes.bool
-}
 
 export default Tower

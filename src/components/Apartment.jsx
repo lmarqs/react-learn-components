@@ -7,8 +7,8 @@ const Apartment = ({ isNight }) => {
   const toggleWindowClosed = () => setWindowClosed(!isWindowsClosed)
   return (
     <div className="apartment" onClick={toggleWindowClosed}>
-      <Window closed={ isWindowsClosed } lightOn={ isNight } />
-      <Window closed={ isWindowsClosed } lightOn={ isNight } />
+      <Window closed={ isWindowsClosed } />
+      <Window closed={ isWindowsClosed } />
     </div>
   )
 }

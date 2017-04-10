@@ -1,21 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Tower from './Tower';
 import ButtonTogglePeriod from './ButtonTogglePeriod';
 
-const Scenery = () => {
-  const [isNight, setIsNight] = useState()
-  const toggleIsNight = () => setIsNight(!isNight)
+const Scenery = ({ isNight }) => {
   const sceneryClass = (isNight) ? "scenery is-night" : "scenery";
   return(
     <div className={sceneryClass}>
       <div className="container">
-        <ButtonTogglePeriod
-          onChangeEvent={ toggleIsNight } />
-        <Tower isNight={ isNight } />
+        <ButtonTogglePeriod />
+        <Tower />
       </div>
       <div className="ground"></div>
     </div>
   )
 }
+Scenery.propTypes = {
+  isNight: PropTypes.bool
+}
 
-export default Scenery
+export const mapStateToProps = ({ app }) => {
+  const { isNight } = app;
+  return { isNight };
+}
+
+export default connect(mapStateToProps)(Scenery)
