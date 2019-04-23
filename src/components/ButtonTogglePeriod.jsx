@@ -1,15 +1,19 @@
-import React, {Component,PropTypes} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 
 import Image from '../day-and-night.png';
 
-class ButtonTogglePeriod extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: false
-    }
+export default class ButtonTogglePeriod extends React.Component {
+  static propTypes = {
+    onChangeEvent: PropTypes.func,
+    onTransitionEnd: PropTypes.func,
   }
+
+  state = {
+    active: false
+  }
+
   componentDidMount() {
     ReactDOM.findDOMNode(this.refs.switchButton)
       .addEventListener('transitionend', this.props.onTransitionEnd, false);
@@ -20,6 +24,7 @@ class ButtonTogglePeriod extends Component {
       active: !this.state.active
     },this.props.onChangeEvent())
   }
+
   render() {
     const { active } = this.state;
     const pos = (active) ? "active" : "";
@@ -33,10 +38,3 @@ class ButtonTogglePeriod extends Component {
     )
   }
 }
-
-ButtonTogglePeriod.propTypes = {
-  onChangeEvent: PropTypes.func,
-  onTransitionEnd: PropTypes.func,
-}
-
-export default ButtonTogglePeriod;

@@ -4,15 +4,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Scenery from './components/Scenery';
 
-const App = React.createClass({
-  render() {
-    return (
-      <Scenery/>
-    )
-  }
-});
-
 ReactDOM.render(
-  <App/>,
+  <Scenery/>,
   document.getElementById('root')
 );

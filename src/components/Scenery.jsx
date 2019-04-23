@@ -2,13 +2,9 @@ import React from 'react';
 import Tower from './Tower';
 import ButtonTogglePeriod from './ButtonTogglePeriod';
 
-class Scenery extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      isNight: false
-    }
+export default class Scenery extends React.Component {
+  state = {
+    isNight: false
   }
 
   changeSceneryState() {
@@ -29,5 +25,3 @@ class Scenery extends React.Component {
     )
   }
 }
-
-export default Scenery;

@@ -1,7 +1,12 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Apartment from './Apartment';
 
-class Tower extends React.Component {
+export default class Tower extends React.Component {
+  static propTypes = {
+    isNight: PropTypes.bool
+  }
+
   render() {
     return (
       <div className="tower">
@@ -15,9 +20,3 @@ class Tower extends React.Component {
     )
   }
 }
-
-Tower.PropTypes = {
-  isNight: PropTypes.bool
-}
-
-export default Tower;

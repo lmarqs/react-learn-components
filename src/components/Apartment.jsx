@@ -1,19 +1,22 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Window from './Window';
 
-class Apartment extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isWindowsClosed: false,
-    }
+export default class Apartment extends React.Component {
+  static propTypes = {
+    lightsOn: PropTypes.bool,
+    isNight: PropTypes.bool
   }
+
+  state = {
+    isWindowsClosed: false,
+  }
+
   changeWindowsState() {
     this.setState({
       isWindowsClosed: !this.state.isWindowsClosed
     });
   }
-
 
   render() {
     return (
@@ -24,10 +27,3 @@ class Apartment extends React.Component {
     )
   }
 }
-
-Apartment.propTypes = {
-  lightsOn: PropTypes.bool,
-  isNight: PropTypes.bool
-}
-
-export default Apartment;
