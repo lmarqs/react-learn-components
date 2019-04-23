@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Tower from './Tower';
 import ButtonTogglePeriod from './ButtonTogglePeriod';
+import IsNightContext from '../contexts/IsNightContext';
 
 const Scenery = () => {
   const [isNight, setIsNight] = useState()
@@ -11,7 +12,9 @@ const Scenery = () => {
       <div className="container">
         <ButtonTogglePeriod
           onChangeEvent={ toggleIsNight } />
-        <Tower isNight={ isNight } />
+          <IsNightContext.Provider value={isNight}>
+            <Tower />
+          </IsNightContext.Provider>
       </div>
       <div className="ground"></div>
     </div>

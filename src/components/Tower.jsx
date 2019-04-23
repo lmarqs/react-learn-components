@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Apartment from './Apartment';
 
 const Tower = ({ isNight }) => (
