@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useReducer } from 'react';
 import Tower from './Tower';
 import ButtonTogglePeriod from './ButtonTogglePeriod';
 import IsNightContext from '../contexts/IsNightContext';
+import IsNightReducer, { INITIAL_STATE, TOGGLE_DAY_NIGHT } from '../reducers/IsNightReducer'
 
 const Scenery = () => {
-  const [isNight, setIsNight] = useState()
-  const toggleIsNight = () => setIsNight(!isNight)
+  const [{ isNight }, dispatch] = useReducer(IsNightReducer, INITIAL_STATE)
+  const toggleIsNight = () => dispatch({ type: TOGGLE_DAY_NIGHT })
   const sceneryClass = (isNight) ? "scenery is-night" : "scenery";
   return(
     <div className={sceneryClass}>
