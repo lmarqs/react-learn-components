@@ -1,17 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Window = (props) => {
+const Window = ({ closed, lightOn }) => {
   let classState = "window";
-  if(props.closed)
+  if(closed)
     classState += " closed";
 
-  if(props.lightOn)
+  if(lightOn)
     classState += " light-on"
 
   return <div className={ classState }></div>
 }
-
 Window.propTypes = {
   closed: PropTypes.bool,
   lightOn: PropTypes.bool
