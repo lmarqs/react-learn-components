@@ -4,9 +4,9 @@
   "private": true,
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.0.2",
+    "react": "file:src/compat/react",
+    "react-dom": "file:src/compat/react-dom",
+    "react-redux": "file:src/compat/react-redux",
     "redux": "^4.0.1"
   },
   "devDependencies": {
