@@ -1,0 +1,8 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "main": "index-node.js",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
