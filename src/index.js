@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import 'look-and-feel/original/index.css';
-import Scenery from 'look-and-feel/original/Scenery';
+import LookAndFeelRender from 'LookAndFeelRender';
 
 ReactDOM.render(
-  <Scenery/>,
+  <LookAndFeelRender />,
   document.getElementById('root')
 );
