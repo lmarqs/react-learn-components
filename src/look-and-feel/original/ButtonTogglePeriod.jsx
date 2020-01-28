@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { useIsNight } from 'hooks/useIsNight';
 
-import Image from '../day-and-night.png';
+import Image from './day-and-night.png';
 
 const ButtonTogglePeriod = () => {
   const { isNight: active, toggleIsNight: onChange } = useIsNight();

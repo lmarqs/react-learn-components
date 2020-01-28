@@ -1,8 +1,8 @@
 import React, { useReducer, useCallback, useMemo } from 'react';
 import Tower from './Tower';
 import ButtonTogglePeriod from './ButtonTogglePeriod';
-import IsNightContext from '../contexts/IsNightContext';
-import IsNightReducer, { INITIAL_STATE, TOGGLE_DAY_NIGHT } from '../reducers/IsNightReducer'
+import IsNightContext from '../../contexts/IsNightContext';
+import IsNightReducer, { INITIAL_STATE, TOGGLE_DAY_NIGHT } from '../../reducers/IsNightReducer'
 
 const Scenery = () => {
   const [{ isNight }, dispatch] = useReducer(IsNightReducer, INITIAL_STATE);
