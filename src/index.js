@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import LookAndFeelRender from 'LookAndFeelRender';
+import Controller from 'Controller';
 
 ReactDOM.render(
-  <LookAndFeelRender />,
+  <Controller />,
   document.getElementById('root')
 );
