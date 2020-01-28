@@ -2,14 +2,14 @@
   "name": "react-learn-components",
   "version": "0.2.0",
   "private": true,
+  "homepage": "https://lmarqs.github.io/react-learn-components/",
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "react-scripts": "^3.0.0"
+    "react-scripts": "^3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
