@@ -1,9 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import IsNightContext from '../contexts/IsNightContext'
+
+import { useIsNight } from 'hooks/useIsNight';
 
 const Window = ({ closed }) => {
-  const isNight = useContext(IsNightContext);
+  const { isNight } = useIsNight();
   let classState = "window";
   if(closed)
     classState += " closed";

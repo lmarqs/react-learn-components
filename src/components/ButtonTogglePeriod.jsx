@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+
+import { useIsNight } from 'hooks/useIsNight';
 
 import Image from '../day-and-night.png';
 
-const ButtonTogglePeriod = ({ onChangeEvent }) => {
-  const [active, setActive] = useState();
-  const onChange = () => {
-    setActive(!active)
-    onChangeEvent()
-  }
+const ButtonTogglePeriod = () => {
+  const { isNight: active, toggleIsNight: onChange } = useIsNight();
+  
   const pos = (active) ? "active" : "";
   return (
     <button
