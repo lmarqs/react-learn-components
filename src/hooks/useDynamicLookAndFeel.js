@@ -1,7 +1,9 @@
 import { lazy, useMemo } from 'react';
 
-const useDynamicLookAndFeel = (name = 'original') => useMemo(() => {
+const useDynamicLookAndFeel = (name) => useMemo(() => {
     switch(name) {
+        case 'other':
+            return delayedLazy(() => import('../look-and-feel/other'));
         case 'original':
         default:
             return delayedLazy(() => import('../look-and-feel/original'));

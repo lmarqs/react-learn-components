@@ -11,7 +11,7 @@ const LookAndFeelRender = () => {
         <>
             <select {...lookAndFeelNameInput}>
                 <option value="original">Original</option>
-                <option value="enhanced">Melhorado</option>
+                <option value="other">Outro</option>
             </select>
             <Suspense fallback={<div>Loading...</div>}>
                 <LookAndFeel />
