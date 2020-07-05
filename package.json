@@ -6,7 +6,7 @@
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.13.0"
   },
   "devDependencies": {
     "react-scripts": "^3.3.0"
