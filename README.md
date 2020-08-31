@@ -1,9 +1,13 @@
-## Start
+# React Learn
 
-**Strongly recommend to use Node >= 6 and npm >= 3 for faster installation speed and better disk usage.** You can use [nvm](https://github.com/creationix/nvm#usage) to easily switch Node versions between different projects.
+This project was created as a presentation for the [React CWB Meetup](https://www.meetup.com/pt-BR/ReactJS-CWB/).
+The objective of this repo is to show and explain a simple application with React.
 
-```sh
-npm install
-npm start
-```
-<img src='https://cloud.githubusercontent.com/assets/2950918/21927614/8aecdf38-d96d-11e6-8ba7-58703aea8742.png' width='500' alt='Screenshot'>
+It is a building with multiple apartments with multiple windows.
+And we have the ability to open and close the apartment windows, as well as changing between night and day.
+
+We also have some branches with different approaches to deal with global state management:
+- [Redux](https://github.com/brunodahora/react-learn-components/tree/redux-learn)
+- [Context API](https://github.com/brunodahora/react-learn-components/tree/context-api-learn)
+- [Recoil.js](https://github.com/brunodahora/react-learn-components/tree/recoil-js-learn)
+- [Redux Hooks](https://github.com/brunodahora/react-learn-components/tree/redux-hooks-learn)
