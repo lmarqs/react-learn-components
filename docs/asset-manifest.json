@@ -1,27 +1,22 @@
 {
   "files": {
-    "main.js": "/react-learn-components/static/js/main.f40301b2.chunk.js",
-    "main.js.map": "/react-learn-components/static/js/main.f40301b2.chunk.js.map",
-    "runtime-main.js": "/react-learn-components/static/js/runtime-main.577377e4.js",
-    "runtime-main.js.map": "/react-learn-components/static/js/runtime-main.577377e4.js.map",
-    "static/js/2.99f303f6.chunk.js": "/react-learn-components/static/js/2.99f303f6.chunk.js",
-    "static/js/2.99f303f6.chunk.js.map": "/react-learn-components/static/js/2.99f303f6.chunk.js.map",
-    "static/css/3.a7dfbcc1.chunk.css": "/react-learn-components/static/css/3.a7dfbcc1.chunk.css",
-    "static/js/3.6d50a888.chunk.js": "/react-learn-components/static/js/3.6d50a888.chunk.js",
-    "static/js/3.6d50a888.chunk.js.map": "/react-learn-components/static/js/3.6d50a888.chunk.js.map",
-    "static/js/4.aa5d24e3.chunk.js": "/react-learn-components/static/js/4.aa5d24e3.chunk.js",
-    "static/js/4.aa5d24e3.chunk.js.map": "/react-learn-components/static/js/4.aa5d24e3.chunk.js.map",
+    "main.css": "/react-learn-components/static/css/main.85f0168d.chunk.css",
+    "main.js": "/react-learn-components/static/js/main.0e7ab886.chunk.js",
+    "main.js.map": "/react-learn-components/static/js/main.0e7ab886.chunk.js.map",
+    "runtime-main.js": "/react-learn-components/static/js/runtime-main.50276aa6.js",
+    "runtime-main.js.map": "/react-learn-components/static/js/runtime-main.50276aa6.js.map",
+    "static/js/2.408649f2.chunk.js": "/react-learn-components/static/js/2.408649f2.chunk.js",
+    "static/js/2.408649f2.chunk.js.map": "/react-learn-components/static/js/2.408649f2.chunk.js.map",
     "index.html": "/react-learn-components/index.html",
-    "precache-manifest.979d09bd60a6c8944ec468fb6554e332.js": "/react-learn-components/precache-manifest.979d09bd60a6c8944ec468fb6554e332.js",
+    "precache-manifest.6c4f4892eba9d1fd95565d71bb7da728.js": "/react-learn-components/precache-manifest.6c4f4892eba9d1fd95565d71bb7da728.js",
     "service-worker.js": "/react-learn-components/service-worker.js",
-    "static/css/3.a7dfbcc1.chunk.css.map": "/react-learn-components/static/css/3.a7dfbcc1.chunk.css.map",
-    "static/js/2.99f303f6.chunk.js.LICENSE": "/react-learn-components/static/js/2.99f303f6.chunk.js.LICENSE",
-    "static/media/moon.jpg": "/react-learn-components/static/media/moon.7cecd6f9.jpg",
-    "static/media/sun.jpg": "/react-learn-components/static/media/sun.e0e99dbf.jpg"
+    "static/css/main.85f0168d.chunk.css.map": "/react-learn-components/static/css/main.85f0168d.chunk.css.map",
+    "static/js/2.408649f2.chunk.js.LICENSE.txt": "/react-learn-components/static/js/2.408649f2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.577377e4.js",
-    "static/js/2.99f303f6.chunk.js",
-    "static/js/main.f40301b2.chunk.js"
+    "static/js/runtime-main.50276aa6.js",
+    "static/js/2.408649f2.chunk.js",
+    "static/css/main.85f0168d.chunk.css",
+    "static/js/main.0e7ab886.chunk.js"
   ]
 }
