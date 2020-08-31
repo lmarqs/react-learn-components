@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Tower from './Tower';
 import ButtonTogglePeriod from './ButtonTogglePeriod';
+import { useIsNight } from 'is-night';
 
 const Scenery = () => {
-  const [isNight, setIsNight] = useState()
+  const [isNight, setIsNight] = useIsNight()
   const toggleIsNight = () => setIsNight(!isNight)
   const sceneryClass = (isNight) ? "scenery is-night" : "scenery";
   return(
