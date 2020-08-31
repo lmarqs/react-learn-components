@@ -4,7 +4,8 @@
         "target": "es6"
     },
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "support/**/*"
     ],
     "exclude": [
         "node_modules"
