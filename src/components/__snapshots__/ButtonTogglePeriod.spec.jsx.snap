@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<button
+  className="toggle-button floating "
+  onClick={[Function]}
+>
+  <img
+    alt="Toggle day/night"
+    height="32"
+    src="day-and-night.png"
+    width="32"
+  />
+</button>
+`;
+
+exports[`toggle active class after a click 1`] = `
+<button
+  className="toggle-button floating active"
+  onClick={[Function]}
+>
+  <img
+    alt="Toggle day/night"
+    height="32"
+    src="day-and-night.png"
+    width="32"
+  />
+</button>
+`;
