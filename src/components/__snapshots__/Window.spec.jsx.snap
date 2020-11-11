@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when "closed" is false 1`] = `
+<div
+  className="window"
+/>
+`;
+
+exports[`renders correctly when "closed" is true 1`] = `
+<div
+  className="window closed"
+/>
+`;
+
+exports[`renders correctly without parameters 1`] = `
+<div
+  className="window"
+/>
+`;
